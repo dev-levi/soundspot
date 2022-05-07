@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+list-style: none;
+font-size: 100%;
+text-decoration: none;
+font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background: #4ECDC4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+
+
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* header da pagina */
+.container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    color: white;
+    text-transform: uppercase;
+}
+
+/* barra de pesquisa */
+
+input{
+    padding: 10px;
+    width: 16vw;
+    margin-right: 2vw;
+}
+
+
+.item:hover{
+    border-bottom: 1px solid #ff80a5;
+    transition: 1s;
+    color: #8be5c2;
+    transition: 0.5s;
+}
+
+.logo{
+    width: 75px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+/* seção principal */
+.primeira-sec{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ECDC4;
+    background-image: url(./fundo-3.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+   /* itens da seção principal*/
+.textos{
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 2px #0000006e;
+    max-width: 980px;
+    padding: 0px 20px;
+}
+
+.cabecalho{
+    font-size:clamp(2rem, 7vw, 3.8rem); 
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.paragrafo{
+    color: white;
+    font-size:clamp(0.8rem, 1.5vw,2.5rem); 
+    text-align: center;
+    padding-bottom: 20px;
+}
+strong{
+    color: #4ECDC4;
+}
+
+
+.botoes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        
+}
+
+.botoes button{
+    background-color: transparent;
+        font-weight: bolder;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #ff80a5;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-shadow: 1px 1px 1px #8d002896;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+button:active{
+    color: white;
+    background-color: black;
+}
+
+.segunda-sec{
+    
+    text-align: center;
+    height: 100vh;
+}
+
+.cabecalho2{
+    text-align: center;
+    background-color:#4ECDC4;
+    color: white;
+    padding:15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+.container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    padding-bottom: 20px;
+}
+li{
+    padding-top: 20px;
+}
+input{
+    width: 80vw;
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    
+    
+}
+
+    
+}
+
+@media screen and (max-width:260px) {
+.botoes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    width: 200px;
+    font-size: 12px;
+
+}
+}
